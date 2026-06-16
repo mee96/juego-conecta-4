@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cell-size: clamp(36px, 4.5vw, 56px);
+  --gap:       clamp(2px, 0.4vw, 5px);
+  --font:      'Press Start 2P', monospace;
+}
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font);
+  background-image: repeating-conic-gradient(#c5b9f0 0% 25%, #a8c4f0 0% 50%);
+  background-size: 60px 60px;
+  color: #2d1b6e;
+}
+
+app-root {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pixel-card {
+  background: #faf8ff;
+  border: 3px solid #2d1b6e;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #2d1b6e;
+}
+
+.pixel-btn {
+  font-family: var(--font);
+  font-size: clamp(8px, 1.5vw, 10px);
+  color: #2d1b6e;
+  background: #f0e4a0;
+  border: 3px solid #2d1b6e;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #2d1b6e;
+  transition: transform 0.1s, box-shadow 0.1s;
+  letter-spacing: 1px;
+}
+.pixel-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 #2d1b6e;
+}
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #2d1b6e;
+}
+.pixel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+.pixel-btn.primary { background: #b8e8d4; }
+.pixel-btn.danger  { background: #f4b8d4; }
+
+.pixel-input {
+  font-family: var(--font);
+  font-size: clamp(8px, 1.5vw, 10px);
+  color: #2d1b6e;
+  background: #faf8ff;
+  border: 3px solid #2d1b6e;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 100%;
+  outline: none;
+}
+.pixel-input:focus {
+  border-color: #5a3fa0;
+  box-shadow: 0 0 0 3px #c5b9f0;
+}
+
+
+@media (max-height: 700px) {
+  :root {
+    --cell-size: 36px;
+    --gap: 3px;
+  }
+}
+
+@media (max-height: 800px) {
+  :root {
+    --cell-size: 42px;
+    --gap: 3px;
+  }
+}
