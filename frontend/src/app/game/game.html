@@ -61,53 +61,55 @@
     }
 
     @if (ws.phase() === 'playing' || ws.phase() === 'finished') {
-        <div class="board-wrapper">
-  <div class="board pixel-card">
-    @for (col of cols; track col) {
-      <div
-        class="board-col"
-        (click)="onColumnClick(col)"
-        [class.col-active]="ws.isMyTurn() && ws.phase() === 'playing'"
-        [attr.aria-label]="'Jugar columna ' + (col + 1)"
-      >
-        @for (row of ws.board(); track $index; let ri = $index) {
-          <div
-            class="cell"
-            [class.p1]="ws.board()[ri][col] === 'P1'"
-            [class.p2]="ws.board()[ri][col] === 'P2'"
-          >
-            <div class="disc">
-              @if (ws.board()[ri][col] !== null) {
-                <span class="disc-shine"></span>
+      <div class="board-wrapper">
+
+        <div class="board pixel-card">
+          @for (col of cols; track col) {
+            <div
+              class="board-col"
+              (click)="onColumnClick(col)"
+              [class.col-active]="ws.isMyTurn() && ws.phase() === 'playing'"
+              [attr.aria-label]="'Jugar columna ' + (col + 1)"
+            >
+              @for (row of [0,1,2,3,4,5]; track row) {
+                <div
+                  class="cell"
+                  [class.p1]="getCell(row, col) === 'P1'"
+                  [class.p2]="getCell(row, col) === 'P2'"
+                >
+                  <div class="disc">
+                    @if (getCell(row, col) !== null) {
+                      <span class="disc-shine"></span>
+                    }
+                  </div>
+                </div>
               }
+            </div>
+          }
+        </div>
+
+        @if (ws.phase() === 'finished') {
+          <div class="end-card pixel-card">
+            <div class="end-title">
+              @if (ws.winner() === 'draw') {
+                🤝 EMPAT!
+              } @else if (ws.winner() === ws.myColor()) {
+                🏆 HAS GUANYAT!
+              } @else {
+                💫 HAS PERDUT...
+              }
+            </div>
+            <div class="end-actions">
+              <button class="pixel-btn primary" (click)="playAgain()">
+                ↺ TORNAR A JUGAR
+              </button>
+              <button class="pixel-btn danger" (click)="goHome()">
+                ⌂ MENÚ PRINCIPAL
+              </button>
             </div>
           </div>
         }
-      </div>
-    }
-  </div>
-</div>
-    }
 
-    @if (ws.phase() === 'finished') {
-      <div class="end-card pixel-card">
-        <div class="end-title">
-          @if (ws.winner() === 'draw') {
-            🤝 EMPAT!
-          } @else if (ws.winner() === ws.myColor()) {
-            🏆 HAS GUANYAT!
-          } @else {
-            💫 HAS PERDUT...
-          }
-        </div>
-        <div class="end-actions">
-          <button class="pixel-btn primary" (click)="playAgain()">
-            ↺ TORNAR A JUGAR
-          </button>
-          <button class="pixel-btn danger" (click)="goHome()">
-            ⌂ MENÚ PRINCIPAL
-          </button>
-        </div>
       </div>
     }
 

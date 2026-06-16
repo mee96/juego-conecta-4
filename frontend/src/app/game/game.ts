@@ -21,6 +21,10 @@ export class GameComponent {
     this.ws.players().find(p => p.color === 'P2')?.name ?? (this.ws.isAiGame() ? 'IA ✦' : 'Jugador 2')
   );
 
+  getCell(row: number, col: number) {
+    return this.ws.board()[row][col];
+  }
+
   onColumnClick(col: number): void {
     this.ws.sendMove(col);
   }

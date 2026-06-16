@@ -196,6 +196,7 @@
 }
 
 .board-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,12 +247,12 @@
 }
 
 .end-card {
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 10;
 }
 
 .end-title {
@@ -305,4 +306,25 @@
   .header-top { padding: 8px 20px; }
   .status-box { padding: 8px 16px; }
   .mem-footer { padding: 6px 20px; }
+}
+
+
+.board-wrapper {
+  position: relative;
+}
+
+.end-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 10;
+  background: #faf8ff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
