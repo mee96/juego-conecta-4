@@ -15,7 +15,7 @@ function emptyBoard(): CellValue[][] {
 @Injectable({ providedIn: 'root' })
 export class WebsocketService implements OnDestroy {
 
-  private readonly WS_URL = 'ws://localhost:8000/ws';
+  private readonly WS_URL = 'wss://conecta4-backend.onrender.com/ws';
   private ws: WebSocket | null = null;
 
   // ── Signals ──
