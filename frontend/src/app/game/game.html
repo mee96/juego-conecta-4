@@ -61,45 +61,32 @@
     }
 
     @if (ws.phase() === 'playing' || ws.phase() === 'finished') {
-      <div class="board-wrapper">
-        <div class="col-indicators">
-          @for (col of cols; track col) {
-            <button
-              class="col-btn"
-              [disabled]="!ws.isMyTurn() || ws.phase() !== 'playing'"
-              (mouseenter)="hoveredCol.set(col)"
-              (mouseleave)="hoveredCol.set(-1)"
-              (click)="onColumnClick(col)"
-              [attr.aria-label]="'Jugar columna ' + (col + 1)"
-            >
-              @if (hoveredCol() === col && ws.isMyTurn() && ws.phase() === 'playing') {
-                <span class="drop-arrow" [class]="'drop-' + (ws.myColor() ?? 'P1')">▼</span>
-              }
-            </button>
-          }
-        </div>
-
-        <div class="board pixel-card">
-          @for (row of ws.board(); track $index) {
-            <div class="board-row">
-              @for (cell of row; track $index; let ci = $index) {
-                <div
-                  class="cell"
-                  [class.p1]="cell === 'P1'"
-                  [class.p2]="cell === 'P2'"
-                  [class.hovered]="hoveredCol() === ci && ws.isMyTurn() && ws.phase() === 'playing'"
-                >
-                  <div class="disc">
-                    @if (cell !== null) {
-                      <span class="disc-shine"></span>
-                    }
-                  </div>
-                </div>
+        <div class="board-wrapper">
+  <div class="board pixel-card">
+    @for (col of cols; track col) {
+      <div
+        class="board-col"
+        (click)="onColumnClick(col)"
+        [class.col-active]="ws.isMyTurn() && ws.phase() === 'playing'"
+        [attr.aria-label]="'Jugar columna ' + (col + 1)"
+      >
+        @for (row of ws.board(); track $index; let ri = $index) {
+          <div
+            class="cell"
+            [class.p1]="ws.board()[ri][col] === 'P1'"
+            [class.p2]="ws.board()[ri][col] === 'P2'"
+          >
+            <div class="disc">
+              @if (ws.board()[ri][col] !== null) {
+                <span class="disc-shine"></span>
               }
             </div>
-          }
-        </div>
+          </div>
+        }
       </div>
+    }
+  </div>
+</div>
     }
 
     @if (ws.phase() === 'finished') {
