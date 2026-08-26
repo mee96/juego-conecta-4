@@ -1,28 +1,84 @@
-# 🎮 Conecta 4 
+<div align="center">
 
-![kawaii](https://img.shields.io/badge/♥_kawaii_pixel_art_♥-c5b9f0?style=for-the-badge&logoColor=2d1b6e)
-![websocket](https://img.shields.io/badge/☆_real--time_websockets_☆-f4b8d4?style=for-the-badge&logoColor=2d1b6e)
-![ai](https://img.shields.io/badge/✦_AI_opponent_✦-b8e8d4?style=for-the-badge&logoColor=2d1b6e)
+<br/>
 
-> Juego multijugador en tiempo real de Conecta 4 con WebSockets, oponente IA vía Groq y una estética pixel-art pastel inspirada en las tarjetas de memoria de los videojuegos retro.
+<table width="100%">
+  <tr>
+    <td align="center" style="background-color: #2D1B6E; padding: 40px 20px; border-radius: 16px;">
+      <img src="https://api.iconify.design/ph/game-controller-fill.svg?color=%23F4B8D4&height=48" height="48" alt="Game Controller Icon" />
+      <h1 style="color: #FDFBF7; font-size: 32px; letter-spacing: 3px; margin: 15px 0 5px 0; border: none;">CONECTA 4 MULTIPLAYER</h1>
+      <p style="color: #F4B8D4; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 15px 0;">Real-Time WebSockets & AI Opponent</p>
+      <p style="color: #FDFBF7; font-size: 15px; max-width: 550px; margin: 0 auto; line-height: 1.5; opacity: 0.9;">
+        Juego multijugador en tiempo real con WebSockets, oponente IA vía Groq LLM y una estética pixel-art pastel inspirada en las tarjetas de memoria de los videojuegos retro.
+      </p>
+    </td>
+  </tr>
+</table>
 
-🎮 **Demo en vivo:** [conecta4-frontend.onrender.com](https://conecta4-frontend.onrender.com)  
-🔧 **Backend API:** [conecta4-backend.onrender.com](https://conecta4-backend.onrender.com)  
-📁 **Repositorio:** [github.com/mee96/juego-conecta-4](https://github.com/mee96/juego-conecta-4)
+<br/>
+
+![Kawaii Pixel Art](https://img.shields.io/badge/kawaii_pixel_art-c5b9f0?style=for-the-badge&logoColor=2d1b6e)
+![Real-Time WebSockets](https://img.shields.io/badge/real--time_websockets-f4b8d4?style=for-the-badge&logoColor=2d1b6e)
+![AI Opponent](https://img.shields.io/badge/AI_opponent-b8e8d4?style=for-the-badge&logoColor=2d1b6e)
+
+<br/>
+
+<a href="https://conecta4-frontend.onrender.com">
+  <img src="https://img.shields.io/badge/DEMO_EN_VIVO-5F6B56?style=for-the-badge&logo=googlechrome&logoColor=FDFBF7" alt="Demo en vivo" />
+</a>
+&nbsp;
+<a href="https://conecta4-backend.onrender.com">
+  <img src="https://img.shields.io/badge/BACKEND_API-A8C4F0?style=for-the-badge&logo=fastapi&logoColor=2d1b6e" alt="Backend API" />
+</a>
+&nbsp;
+<a href="https://github.com/mee96/juego-conecta-4">
+  <img src="https://img.shields.io/badge/REPOSITORIO-D49A99?style=for-the-badge&logo=github&logoColor=333333" alt="GitHub Repo" />
+</a>
+
+</div>
+
+<br/>
 
 ---
 
-## ✦ Funcionalidades
+## <img src="https://api.iconify.design/ph/sparkle-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Funcionalidades
 
-- **PvP en tiempo real** — dos jugadores se conectan al mismo código de sala y juegan en vivo vía WebSockets
-- **Oponente IA** — si estás sola en la sala, puedes jugar contra una IA impulsada por el modelo `llama-3.1-8b-instant` de Groq
-- **Sin login** — solo un nombre de usuario y un código de sala, y ya estás dentro
-- **Diseño responsive** — jugable en escritorio y móvil, toca cualquier punto de la columna para soltar tu ficha
-- **UI kawaii pixel-art** — fondo de tablero de ajedrez pastel, fuente Press Start 2P, corazones y estrellas animados, inspirado en las tarjetas de memoria de consolas retro
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3 style="color: #2D1B6E; margin-top: 0;">
+        <img src="https://api.iconify.design/ph/users-three-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;PvP en tiempo real
+      </h3>
+      <p>Dos jugadores se conectan al mismo código de sala y juegan en vivo con sincronización vía WebSockets.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 style="color: #2D1B6E; margin-top: 0;">
+        <img src="https://api.iconify.design/ph/robot-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;Oponente IA
+      </h3>
+      <p>En partidas individuales, el servidor activa una IA impulsada por el modelo <code>llama-3.1-8b-instant</code> de Groq.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 style="color: #2D1B6E; margin-top: 0;">
+        <img src="https://api.iconify.design/ph/user-minus-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;Sin registro
+      </h3>
+      <p>Acceso directo indicando únicamente un nombre de usuario y un código de sala.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 style="color: #2D1B6E; margin-top: 0;">
+        <img src="https://api.iconify.design/ph/device-mobile-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;Diseño Responsive & UI Pixel-Art
+      </h3>
+      <p>Optimizada para escritorio y móvil con toque directo en columna, tipografía retro Press Start 2P y estética pastel.</p>
+    </td>
+  </tr>
+</table>
+
+<br/>
 
 ---
 
-## ✦ Stack tecnológico
+## <img src="https://api.iconify.design/ph/code-bold.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Stack tecnológico
 
 ### Frontend
 
@@ -40,13 +96,15 @@
 ![Uvicorn](https://img.shields.io/badge/Uvicorn-f0e4a0?style=for-the-badge&logo=gunicorn&logoColor=2d1b6e)
 ![Render](https://img.shields.io/badge/Render-a8c4f0?style=for-the-badge&logo=render&logoColor=2d1b6e)
 
+<br/>
+
 ---
 
-## ✦ Arquitectura
+## <img src="https://api.iconify.design/ph/tree-structure-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Arquitectura
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
-│                        CLIENTE                          │
+│                         CLIENTE                         │
 │                                                         │
 │  LoginComponent  ──►  WebsocketService  ──►  GameComponent │
 │  (sala + nombre)      (signals estado)     (tablero 6×7) │
@@ -68,8 +126,8 @@
 
 ```typescript
 // Cliente → Servidor
-{ type: 'join',       payload: { name: string, room: string } }
-{ type: 'move',       payload: { column: number } }
+{ type: 'join',        payload: { name: string, room: string } }
+{ type: 'move',        payload: { column: number } }
 { type: 'play_vs_ai', payload: {} }
 
 // Servidor → Cliente
@@ -80,49 +138,53 @@
 { type: 'error',         payload: { message: string } }
 ```
 
+<br/>
+
 ---
 
-## ✦ Flujo del juego
+## <img src="https://api.iconify.design/ph/arrows-merge-bold.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Flujo del juego
 
-```
+```text
 Introduce nombre + código de sala
               │
               ▼
        Pantalla de espera
        ┌──────┴──────┐
        │             │
-  llega rival   "Jugar contra IA"
+ llega rival   "Jugar contra IA"
     humano           │
        │             │
        └──────┬──────┘
               ▼
-        Partida iniciada
+       Partida iniciada
               │
-        ┌─────┴─────┐
-        │           │
-       PvP        vs IA
-   (2 pestañas)  (Groq LLM)
+       ┌──────┴──────┐
+       │             │
+      PvP          vs IA
+ (2 pestañas)    (Groq LLM)
               │
               ▼
        Victoria / Empate
               │
               ▼
-    Volver a jugar / Menú
+     Volver a jugar / Menú
 ```
+
+<br/>
 
 ---
 
-## ✦ Estructura del proyecto
+## <img src="https://api.iconify.design/ph/folder-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Estructura del proyecto
 
-```
+```text
 juego-conecta-4/
 ├── frontend/
 │   └── src/
 │       ├── app/
 │       │   ├── models/
-│       │   │   └── game.ts        # Interfaces y tipos TypeScript
+│       │   │   └── game.ts         # Interfaces y tipos TypeScript
 │       │   ├── services/
-│       │   │   └── websocket.ts  # WebSocket + estado con signals
+│       │   │   └── websocket.ts   # WebSocket + estado con signals
 │       │   ├── login/
 │       │   │   ├── login.ts
 │       │   │   ├── login.html
@@ -134,26 +196,28 @@ juego-conecta-4/
 │       │   ├── app.ts
 │       │   ├── app.html
 │       │   └── app.config.ts
-│       ├── styles.css                    # Tokens globales y tema pixel-art
+│       ├── styles.css             # Tokens globales y tema pixel-art
 │       └── index.html
 └── backend/
-    ├── main.py                           # App FastAPI + endpoint WebSocket
-    ├── connection_manager.py             # Gestión de salas y jugadores
-    ├── game_manager.py                   # Lógica del tablero y detección de victoria
-    ├── ai_player.py                      # Integración Groq SDK
+    ├── main.py                    # App FastAPI + endpoint WebSocket
+    ├── connection_manager.py      # Gestión de salas y jugadores
+    ├── game_manager.py            # Lógica del tablero y detección de victoria
+    ├── ai_player.py               # Integración Groq SDK
     └── requirements.txt
 ```
 
+<br/>
+
 ---
 
-## ✦ Ejecutar en local
+## <img src="https://api.iconify.design/ph/terminal-window-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Ejecutar en local
 
 ### Backend
 
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts ctivate
 pip install -r requirements.txt
 
 # Crear fichero .env
@@ -174,33 +238,42 @@ ng serve
 
 > **Nota:** asegúrate de que el backend esté corriendo antes de abrir el frontend. Consigue una API key gratuita de Groq en [console.groq.com](https://console.groq.com).
 
+<br/>
+
 ---
 
-## ✦ Despliegue
+## <img src="https://api.iconify.design/ph/cloud-arrow-up-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Despliegue
 
 | Servicio | Plataforma | Configuración |
-|---|---|---|
-| Backend | Render Web Service | Root dir: `backend` · Start: `uvicorn main:app --host 0.0.0.0 --port $PORT` |
-| Frontend | Render Static Site | Root dir: `frontend` · Build: `npm install && ng build` · Publish: `dist/frontend/browser` |
+| :--- | :--- | :--- |
+| **Backend** | Render Web Service | Root dir: `backend` · Start: `uvicorn main:app --host 0.0.0.0 --port $PORT` |
+| **Frontend** | Render Static Site | Root dir: `frontend` · Build: `npm install && ng build` · Publish: `dist/frontend/browser` |
 
 Variables de entorno configuradas en el dashboard de Render (nunca en git):
-- `GROQ_API_KEY`
+* `GROQ_API_KEY`
+
+<br/>
 
 ---
 
-## ✦ Lo que he aprendido
+## <img src="https://api.iconify.design/ph/lightbulb-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Lo que he aprendido
 
-- Implementar **comunicación bidireccional en tiempo real** con WebSockets tanto en FastAPI (async) como en Angular
-- Gestionar el **estado reactivo de la UI** exclusivamente con Angular Signals — sin RxJS, sin NgRx
-- Integrar un **LLM como oponente de juego** vía Groq SDK con un prompt estructurado que devuelve un único número de columna
-- Diseñar un **sistema multijugador basado en salas** donde el servidor detecta el número de jugadores y cambia dinámicamente entre modo PvP y modo IA
-- Desplegar una **aplicación WebSocket full-stack** en Render, gestionando `ws://` → `wss://` y configuración de CORS
+* Implementar **comunicación bidireccional en tiempo real** con WebSockets tanto en FastAPI (async) como en Angular.
+* Gestionar el **estado reactivo de la UI** exclusivamente con Angular Signals (sin RxJS ni NgRx).
+* Integrar un **LLM como oponente de juego** vía Groq SDK con un prompt estructurado que devuelve un único número de columna.
+* Diseñar un **sistema multijugador basado en salas** donde el servidor detecta el número de jugadores y cambia dinámicamente entre modo PvP y modo IA.
+* Desplegar una **aplicación WebSocket full-stack** en Render, gestionando `ws://` → `wss://` y configuración de CORS.
+
+<br/>
 
 ---
 
-## ✦ Autora
+<div align="center">
 
-**Carme Medina Canalda**  
-Junior Full Stack Developer · Barcelona  
-[github.com/mee96](https://github.com/mee96)
+Desenvolupat per **Carme Medina Canalda**  
+*Full Stack Developer · Barcelona*
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-2D1B6E?style=flat-square&logo=linkedin&logoColor=FDFBF7)](https://www.linkedin.com/in/carme-medina-canalda-250457132/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-D49A99?style=flat-square&logoColor=333333)](https://carme-portfoli.onrender.com/)
+
+</div>
