@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=2d1b6e&height=180&section=header&text=%F0%9F%94%B4%20CONECTA%204%20MULTIPLAYER%20%F0%9F%9F%A1&fontColor=fdfbf7&fontSize=30&desc=WebSockets%20en%20temps%20real%20i%20oponent%20IA&descSize=16&descAlignY=65&fontAlignY=42" width="100%" alt="Conecta 4 Multiplayer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=2d1b6e&height=160&section=header&text=%F0%9F%94%B4%20CONECTA%204%20MULTIPLAYER%20%F0%9F%9F%A1&fontColor=f4b8d4&fontSize=30&fontAlignY=45" width="100%" alt="Conecta 4 Multiplayer" />
+
+<div style="background-color: #2D1B6E; padding: 0 20px 20px; margin-top: -6px;">
+  <p style="color: #FDFBF7; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0;">WebSockets en Temps Real i Oponent IA</p>
+</div>
 
 <br/>
 
