@@ -17,7 +17,7 @@
       <h1 style="color: #FDFBF7; font-size: 32px; letter-spacing: 3px; margin: 15px 0 5px 0; border: none;">CONECTA 4 MULTIPLAYER</h1>
       <p style="color: #F4B8D4; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 15px 0;">Real-Time WebSockets & AI Opponent</p>
       <p style="color: #FDFBF7; font-size: 15px; max-width: 550px; margin: 0 auto; line-height: 1.5; opacity: 0.9;">
-        Real-time multiplayer game built with WebSockets, an AI opponent powered by the Groq LLM, and a pastel pixel-art aesthetic inspired by retro video game memory cards.
+        Juego multijugador en tiempo real con WebSockets, oponente IA vía Groq LLM y una estética pixel-art pastel inspirada en las tarjetas de memoria de los videojuegos retro.
       </p>
     </td>
   </tr>
@@ -32,7 +32,7 @@
 <br/>
 
 <a href="https://conecta4-frontend.onrender.com">
-  <img src="https://img.shields.io/badge/LIVE_DEMO-5F6B56?style=for-the-badge&logo=googlechrome&logoColor=FDFBF7" alt="Live Demo" />
+  <img src="https://img.shields.io/badge/DEMO_EN_VIVO-5F6B56?style=for-the-badge&logo=googlechrome&logoColor=FDFBF7" alt="Demo en vivo" />
 </a>
 &nbsp;
 <a href="https://conecta4-backend.onrender.com">
@@ -40,7 +40,7 @@
 </a>
 &nbsp;
 <a href="https://github.com/mee96/juego-conecta-4">
-  <img src="https://img.shields.io/badge/REPOSITORY-D49A99?style=for-the-badge&logo=github&logoColor=333333" alt="GitHub Repo" />
+  <img src="https://img.shields.io/badge/REPOSITORIO-D49A99?style=for-the-badge&logo=github&logoColor=333333" alt="GitHub Repo" />
 </a>
 
 </div>
@@ -49,35 +49,35 @@
 
 ---
 
-## <img src="https://api.iconify.design/ph/sparkle-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Features
+## <img src="https://api.iconify.design/ph/sparkle-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Funcionalidades
 
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
       <h3 style="color: #2D1B6E; margin-top: 0;">
-        <img src="https://api.iconify.design/ph/users-three-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;Real-time PvP
+        <img src="https://api.iconify.design/ph/users-three-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;PvP en tiempo real
       </h3>
-      <p>Two players connect to the same room code and play live with synchronization via WebSockets.</p>
+      <p>Dos jugadores se conectan al mismo código de sala y juegan en vivo con sincronización vía WebSockets.</p>
     </td>
     <td width="50%" valign="top">
       <h3 style="color: #2D1B6E; margin-top: 0;">
-        <img src="https://api.iconify.design/ph/robot-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;AI Opponent
+        <img src="https://api.iconify.design/ph/robot-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;Oponente IA
       </h3>
-      <p>In single-player matches, the server activates an AI powered by Groq's <code>llama-3.1-8b-instant</code> model.</p>
+      <p>En partidas individuales, el servidor activa una IA impulsada por el modelo <code>llama-3.1-8b-instant</code> de Groq.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3 style="color: #2D1B6E; margin-top: 0;">
-        <img src="https://api.iconify.design/ph/user-minus-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;No Sign-Up
+        <img src="https://api.iconify.design/ph/user-minus-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;Sin registro
       </h3>
-      <p>Direct access by simply entering a username and a room code.</p>
+      <p>Acceso directo indicando únicamente un nombre de usuario y un código de sala.</p>
     </td>
     <td width="50%" valign="top">
       <h3 style="color: #2D1B6E; margin-top: 0;">
-        <img src="https://api.iconify.design/ph/device-mobile-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;Responsive Design & Pixel-Art UI
+        <img src="https://api.iconify.design/ph/device-mobile-fill.svg?color=%232D1B6E&height=20" height="18" /> &nbsp;Diseño Responsive & UI Pixel-Art
       </h3>
-      <p>Optimized for desktop and mobile with direct column tapping, retro Press Start 2P typography, and a pastel aesthetic.</p>
+      <p>Optimizada para escritorio y móvil con toque directo en columna, tipografía retro Press Start 2P y estética pastel.</p>
     </td>
   </tr>
 </table>
@@ -86,7 +86,7 @@
 
 ---
 
-## <img src="https://api.iconify.design/ph/code-bold.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Tech Stack
+## <img src="https://api.iconify.design/ph/code-bold.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Stack tecnológico
 
 ### Frontend
 
@@ -108,37 +108,37 @@
 
 ---
 
-## <img src="https://api.iconify.design/ph/tree-structure-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Architecture
+## <img src="https://api.iconify.design/ph/tree-structure-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Arquitectura
 
 ```text
 ┌─────────────────────────────────────────────────────────┐
-│                          CLIENT                          │
+│                         CLIENTE                          │
 │                                                           │
 │  LoginComponent  ──►  WebsocketService  ──►  GameComponent │
-│  (room + name)        (signal-based state)   (6×7 board) │
+│  (sala + nombre)      (signals estado)      (tablero 6×7) │
 └───────────────────────────┬─────────────────────────────┘
                             │  WebSocket (wss://)
 ┌───────────────────────────▼─────────────────────────────┐
-│                          SERVER                          │
+│                        SERVIDOR                          │
 │                                                           │
 │  FastAPI /ws  ──►  ConnectionManager  ──►  GameManager   │
-│                    (rooms/players)      (logic/winner)   │
+│                    (salas/jugadores)    (lógica/victoria)│
 │                            │                              │
 │                            ▼                              │
 │                        Groq SDK                          │
-│                  (AI move if 1 player)                   │
+│                  (movimiento IA si 1 jugador)             │
 └─────────────────────────────────────────────────────────┘
 ```
 
-### WebSocket message protocol
+### Protocolo de mensajes WebSocket
 
 ```typescript
-// Client → Server
+// Cliente → Servidor
 { type: 'join',        payload: { name: string, room: string } }
 { type: 'move',        payload: { column: number } }
 { type: 'play_vs_ai', payload: {} }
 
-// Server → Client
+// Servidor → Cliente
 { type: 'state',         payload: { board, currentTurn, players, isAiGame } }
 { type: 'winner',        payload: { winner: 'P1' | 'P2' | 'draw' } }
 { type: 'wait',          payload: { message: string } }
@@ -150,39 +150,39 @@
 
 ---
 
-## <img src="https://api.iconify.design/ph/arrows-merge-bold.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Game Flow
+## <img src="https://api.iconify.design/ph/arrows-merge-bold.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Flujo del juego
 
 ```text
-Enter name + room code
+Introduce nombre + código de sala
               │
               ▼
-        Waiting screen
+       Pantalla de espera
        ┌──────┴──────┐
        │             │
- human opponent  "Play vs AI"
-   joins             │
+ llega rival   "Jugar contra IA"
+    humano           │
        │             │
        └──────┬──────┘
               ▼
-        Match started
+       Partida iniciada
               │
        ┌──────┴──────┐
        │             │
-      PvP          vs AI
- (2 tabs)       (Groq LLM)
+      PvP          vs IA
+ (2 pestañas)    (Groq LLM)
               │
               ▼
-        Win / Draw
+       Victoria / Empate
               │
               ▼
-      Play again / Menu
+     Volver a jugar / Menú
 ```
 
 <br/>
 
 ---
 
-## <img src="https://api.iconify.design/ph/folder-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Project Structure
+## <img src="https://api.iconify.design/ph/folder-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Estructura del proyecto
 
 ```text
 juego-conecta-4/
@@ -190,9 +190,9 @@ juego-conecta-4/
 │   └── src/
 │       ├── app/
 │       │   ├── models/
-│       │   │   └── game.ts         # TypeScript interfaces and types
+│       │   │   └── game.ts         # Interfaces y tipos TypeScript
 │       │   ├── services/
-│       │   │   └── websocket.ts   # WebSocket + signal-based state
+│       │   │   └── websocket.ts   # WebSocket + estado con signals
 │       │   ├── login/
 │       │   │   ├── login.ts
 │       │   │   ├── login.html
@@ -204,13 +204,13 @@ juego-conecta-4/
 │       │   ├── app.ts
 │       │   ├── app.html
 │       │   └── app.config.ts
-│       ├── styles.css             # Global tokens and pixel-art theme
+│       ├── styles.css             # Tokens globales y tema pixel-art
 │       └── index.html
 └── backend/
-    ├── main.py                    # FastAPI app + WebSocket endpoint
-    ├── connection_manager.py      # Room and player management
-    ├── game_manager.py            # Board logic and win detection
-    ├── ai_player.py               # Groq SDK integration
+    ├── main.py                    # App FastAPI + endpoint WebSocket
+    ├── connection_manager.py      # Gestión de salas y jugadores
+    ├── game_manager.py            # Lógica del tablero y detección de victoria
+    ├── ai_player.py               # Integración Groq SDK
     └── requirements.txt
 ```
 
@@ -218,7 +218,7 @@ juego-conecta-4/
 
 ---
 
-## <img src="https://api.iconify.design/ph/terminal-window-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Run Locally
+## <img src="https://api.iconify.design/ph/terminal-window-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Ejecutar en local
 
 ### Backend
 
@@ -228,11 +228,11 @@ python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-# Create .env file
-echo "GROQ_API_KEY=your_key_here" > .env
+# Crear fichero .env
+echo "GROQ_API_KEY=tu_key_aqui" > .env
 
 uvicorn main:app --reload
-# Server at http://localhost:8000
+# Servidor en http://localhost:8000
 ```
 
 ### Frontend
@@ -241,36 +241,36 @@ uvicorn main:app --reload
 cd frontend
 npm install
 ng serve
-# App at http://localhost:4200
+# App en http://localhost:4200
 ```
 
-> **Note:** make sure the backend is running before opening the frontend. Get a free Groq API key at [console.groq.com](https://console.groq.com).
+> **Nota:** asegúrate de que el backend esté corriendo antes de abrir el frontend. Consigue una API key gratuita de Groq en [console.groq.com](https://console.groq.com).
 
 <br/>
 
 ---
 
-## <img src="https://api.iconify.design/ph/cloud-arrow-up-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Deployment
+## <img src="https://api.iconify.design/ph/cloud-arrow-up-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Despliegue
 
-| Service | Platform | Configuration |
+| Servicio | Plataforma | Configuración |
 | :--- | :--- | :--- |
 | **Backend** | Render Web Service | Root dir: `backend` · Start: `uvicorn main:app --host 0.0.0.0 --port $PORT` |
 | **Frontend** | Render Static Site | Root dir: `frontend` · Build: `npm install && ng build` · Publish: `dist/frontend/browser` |
 
-Environment variables configured in the Render dashboard (never in git):
+Variables de entorno configuradas en el dashboard de Render (nunca en git):
 * `GROQ_API_KEY`
 
 <br/>
 
 ---
 
-## <img src="https://api.iconify.design/ph/lightbulb-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;What I Learned
+## <img src="https://api.iconify.design/ph/lightbulb-fill.svg?color=%232D1B6E&height=22" height="20"> &nbsp;Lo que he aprendido
 
-* Implementing **bidirectional real-time communication** with WebSockets on both FastAPI (async) and Angular.
-* Managing **reactive UI state** exclusively with Angular Signals (no RxJS, no NgRx).
-* Integrating an **LLM as a game opponent** via the Groq SDK with a structured prompt that returns a single column number.
-* Designing a **room-based multiplayer system** where the server detects the number of players and dynamically switches between PvP mode and AI mode.
-* Deploying a **full-stack WebSocket application** on Render, handling `ws://` → `wss://` and CORS configuration.
+* Implementar **comunicación bidireccional en tiempo real** con WebSockets tanto en FastAPI (async) como en Angular.
+* Gestionar el **estado reactivo de la UI** exclusivamente con Angular Signals (sin RxJS ni NgRx).
+* Integrar un **LLM como oponente de juego** vía Groq SDK con un prompt estructurado que devuelve un único número de columna.
+* Diseñar un **sistema multijugador basado en salas** donde el servidor detecta el número de jugadores y cambia dinámicamente entre modo PvP y modo IA.
+* Desplegar una **aplicación WebSocket full-stack** en Render, gestionando `ws://` → `wss://` y configuración de CORS.
 
 <br/>
 
@@ -278,7 +278,7 @@ Environment variables configured in the Render dashboard (never in git):
 
 <div align="center">
 
-Built by **Carme Medina Canalda**
+Desarrollado por **Carme Medina Canalda**
 *Full Stack Developer · Barcelona*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-2D1B6E?style=flat-square&logo=linkedin&logoColor=FDFBF7)](https://www.linkedin.com/in/carme-medina-canalda-250457132/)
