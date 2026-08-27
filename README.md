@@ -1,27 +1,14 @@
 <div align="center">
-<a href="README.md"><img src="https://img.shields.io/badge/English-1b2e4b?style=flat-square" alt="English"></a>
-<a href="README.es.md"><img src="https://img.shields.io/badge/Espa%C3%B1ol-a8c4f0?style=flat-square&logoColor=1b2e4b" alt="Español"></a>
-<a href="README.ca.md"><img src="https://img.shields.io/badge/Catal%C3%A0-5b9bd5?style=flat-square" alt="Català"></a>
-</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=2d1b6e&height=180&section=header&text=%F0%9F%94%B4%20CONECTA%204%20MULTIPLAYER%20%F0%9F%9F%A1&fontColor=f4b8d4&fontSize=30&desc=Real-time%20WebSockets%20%26%20AI%20Opponent&descSize=16&descColor=fdfbf7&descAlignY=65&fontAlignY=42" width="100%" alt="Conecta 4 Multiplayer" />
 
 <br/>
 
 <div align="center">
-
-<br/>
-
-<table width="100%">
-  <tr>
-    <td align="center" style="background-color: #2D1B6E; padding: 40px 20px; border-radius: 16px;">
-      <img src="https://api.iconify.design/ph/game-controller-fill.svg?color=%23F4B8D4&height=48" height="48" alt="Game Controller Icon" />
-      <h1 style="color: #FDFBF7; font-size: 32px; letter-spacing: 3px; margin: 15px 0 5px 0; border: none;">CONECTA 4 MULTIPLAYER</h1>
-      <p style="color: #F4B8D4; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 15px 0;">Real-Time WebSockets & AI Opponent</p>
-      <p style="color: #FDFBF7; font-size: 15px; max-width: 550px; margin: 0 auto; line-height: 1.5; opacity: 0.9;">
-        Real-time multiplayer game built with WebSockets, an AI opponent powered by the Groq LLM, and a pastel pixel-art aesthetic inspired by retro video game memory cards.
-      </p>
-    </td>
-  </tr>
-</table>
+<a href="README.md"><img src="https://img.shields.io/badge/English-1b2e4b?style=flat-square" alt="English"></a>
+<a href="README.es.md"><img src="https://img.shields.io/badge/Espa%C3%B1ol-a8c4f0?style=flat-square&logoColor=1b2e4b" alt="Español"></a>
+<a href="README.ca.md"><img src="https://img.shields.io/badge/Catal%C3%A0-5b9bd5?style=flat-square" alt="Català"></a>
+</div>
 
 <br/>
 
@@ -41,6 +28,10 @@
 &nbsp;
 <a href="https://github.com/mee96/juego-conecta-4">
   <img src="https://img.shields.io/badge/REPOSITORY-D49A99?style=for-the-badge&logo=github&logoColor=333333" alt="GitHub Repo" />
+</a>
+&nbsp;
+<a href="https://github.com/mee96/keep-alive">
+  <img src="https://img.shields.io/badge/Keep--Alive-Active-b8e8d4?style=flat-square&logo=githubactions&logoColor=2d1b6e" alt="Keep Alive Active" />
 </a>
 
 </div>
@@ -234,6 +225,8 @@ echo "GROQ_API_KEY=your_key_here" > .env
 uvicorn main:app --reload
 # Server at http://localhost:8000
 ```
+
+> ⚡ **Availability:** The backend stays active without *cold starts* thanks to an automatic ping from [Keep-Alive](https://github.com/mee96/keep-alive).
 
 ### Frontend
 
