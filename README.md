@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=2d1b6e&height=180&section=header&text=%F0%9F%94%B4%20CONECTA%204%20MULTIPLAYER%20%F0%9F%9F%A1&fontColor=f4b8d4&fontSize=30&desc=Real-time%20WebSockets%20and%20AI%20Opponent&descSize=16&descColor=fdfbf7&descAlignY=65&fontAlignY=42" width="100%" alt="Conecta 4 Multiplayer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=2d1b6e&height=180&section=header&text=%F0%9F%94%B4%20CONECTA%204%20MULTIPLAYER%20%F0%9F%9F%A1&fontColor=f4b8d4&fontSize=30&desc=Real-time%20WebSockets%20and%20AI%20Opponent&descSize=16&descColor=c5b9f0&descAlignY=65&fontAlignY=42" width="100%" alt="Conecta 4 Multiplayer" />
 
 <br/>
 
