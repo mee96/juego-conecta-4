@@ -34,9 +34,7 @@
   <img src="https://img.shields.io/badge/REPOSITORIO-D49A99?style=for-the-badge&logo=github&logoColor=333333" alt="GitHub Repo" />
 </a>
 &nbsp;
-<a href="https://github.com/mee96/keep-alive">
-  <img src="https://img.shields.io/badge/Keep--Alive-Active-b8e8d4?style=flat-square&logo=githubactions&logoColor=2d1b6e" alt="Keep Alive Active" />
-</a>
+<img src="https://img.shields.io/badge/Render_Free_Tier-Cold_start_~1_min-f0e4a0?style=flat-square&logo=render&logoColor=2d1b6e" alt="Render Free Tier" />
 
 </div>
 
@@ -230,7 +228,7 @@ uvicorn main:app --reload
 # Servidor en http://localhost:8000
 ```
 
-> ⚡ **Disponibilidad:** el backend se mantiene activo sin *cold starts* gracias a un ping automático de [Keep-Alive](https://github.com/mee96/keep-alive).
+> ⏳ **Disponibilidad:** El backend está alojado en el plan gratuito de Render y se suspende tras un periodo de inactividad. La primera petición puede tardar 30–60 segundos mientras el servidor arranca; después responde con normalidad.
 
 ### Frontend
 
